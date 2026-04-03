@@ -1,73 +1,137 @@
-# Welcome to your Lovable project
+# 🧠 MindScope – AI Mental Health Chatbot
 
-## Project info
+## 📌 Overview
 
-**URL**: https://lovable.dev/projects/ba55eb77-762a-482e-baee-62bca5e9ce57
+MindScope is a full-stack AI-powered mental health support application that enables users to interact with a conversational assistant, take psychological assessments, and track their emotional well-being over time.
 
-## How can I edit this code?
+The application integrates **Gemini 2.5** for generating intelligent responses and uses Supabase for backend services including authentication and database management.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🚀 Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ba55eb77-762a-482e-baee-62bca5e9ce57) and start prompting.
+* 💬 **AI Chat Interface**
 
-Changes made via Lovable will be committed automatically to this repo.
+  * Real-time conversational chatbot powered by Gemini 2.5
+  * Persistent chat history with conversation tracking
 
-**Use your preferred IDE**
+* 🧪 **Mental Health Assessments**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+  * Stress, Anxiety, Depression, MBTI, and EQ tests
+  * Structured questionnaire flow with progress tracking
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* 📊 **Dashboard & Results**
 
-Follow these steps:
+  * View past assessments and insights
+  * Track mental health trends over time
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* 🔐 **Authentication**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+  * Secure login/signup using Supabase Auth
 
-# Step 3: Install the necessary dependencies.
-npm i
+* ⚠️ **Safety & Consent**
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+  * User consent system before accessing the app
+  * Emergency mental health resources displayed
+
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+
+* React (TypeScript)
+* Vite
+* Tailwind CSS
+* React Router
+
+### Backend
+
+* Supabase (Auth + PostgreSQL + Edge Functions)
+
+### AI Integration
+
+* Gemini 2.5 (via backend API)
+
+### Other Libraries
+
+* TanStack React Query
+* Lucide Icons
+
+---
+
+## 🧠 How It Works
+
+1. User logs in and accepts consent
+2. A conversation session is created
+3. First-time users are shown a welcome dialog with guidance on how to use the application effectively
+4. User sends a message via chat UI
+5. Message is stored in database
+6. Backend function sends request to Gemini 2.5
+7. AI response is returned and displayed
+8. Conversation history is updated
+
+---
+
+## 🔧 Installation & Setup
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/your-username/mindscope.git
+cd mindscope
+```
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Setup environment variables
+
+Create a `.env` file in root:
+
+```
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+### 4. Run the application
+
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+App will run on:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+## ⚠️ Disclaimer
 
-This project is built with:
+MindScope is a mental health support and screening tool and is **not a substitute for professional medical advice, diagnosis, or treatment**. In case of emergency, users are advised to contact local emergency services or mental health helplines.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/ba55eb77-762a-482e-baee-62bca5e9ce57) and click on Share -> Publish.
+## 🚀 Future Improvements
 
-## Can I connect a custom domain to my Lovable project?
+* Mood trend visualization
+* AI-based personalized recommendations
+* Backend migration to custom API (FastAPI / Node.js)
+* Real-time chat streaming
+* Advanced safety filtering
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## ⭐ Acknowledgements
+
+* Google Gemini (LLM)
+* Supabase
+* React & Vite ecosystem
