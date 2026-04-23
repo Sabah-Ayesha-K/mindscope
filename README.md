@@ -4,7 +4,7 @@
 
 MindScope is a full-stack AI-powered mental health support application that enables users to interact with a conversational assistant, take psychological assessments, and track their emotional well-being over time.
 
-The application integrates **Gemini 2.5** for generating intelligent responses and uses Supabase for backend services including authentication and database management.
+The application integrates **Gemini 2.5** for generating intelligent responses and uses Flask for backend services including authentication and database management.
 
 ---
 
@@ -27,7 +27,7 @@ The application integrates **Gemini 2.5** for generating intelligent responses a
 
 * 🔐 **Authentication**
 
-  * Secure login/signup using Supabase Auth
+  * Secure login/signup
 
 * ⚠️ **Safety & Consent**
 
@@ -47,7 +47,7 @@ The application integrates **Gemini 2.5** for generating intelligent responses a
 
 ### Backend
 
-* Supabase (Auth + PostgreSQL + Edge Functions)
+* Flask
 
 ### AI Integration
 
@@ -88,16 +88,8 @@ cd mindscope
 npm install
 ```
 
-### 3. Setup environment variables
 
-Create a `.env` file in root:
-
-```
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-### 4. Run the application
+### 3. Run the application
 
 ```
 npm run dev
@@ -127,5 +119,3 @@ MindScope is a mental health support and screening tool and is **not a substitut
 ## ⭐ Acknowledgements
 
 * Google Gemini (LLM)
-* Supabase
-* React & Vite ecosystem
