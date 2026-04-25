@@ -42,7 +42,6 @@ The application integrates **Gemini 2.5** for generating intelligent responses a
 
 * React (TypeScript)
 * Vite
-* Tailwind CSS
 * React Router
 
 ### Backend
